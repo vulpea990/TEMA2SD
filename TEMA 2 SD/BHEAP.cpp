@@ -185,7 +185,7 @@ void delete_min(list<node*> &Heap)
 
     min1 = 1 << 30;
     for(t = Heap.begin(); t != Heap.end(); t++)
-        if(!(*t)->deleted)   /// caut minimul si apelez delete_nod cu valoarea minimului
+        if(!(*t)->deleted)   /// caut minimul si apelez delete_node cu valoarea minimului
             min1 = min(min1, (*t)->value);
     delete_node(Heap, min1);
 }
